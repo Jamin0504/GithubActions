@@ -33,9 +33,9 @@ namespace GithubActionsLab
         [Test]
         public void Subtract_Valid_Fritz()
         {
-            Assert.AreEqual(3, Program.Subtract("2", "1"));
-            Assert.AreEqual(5, Program.Subtract("1", "2"));
-            Assert.AreEqual(12, Program.Subtract("7", "5"));
+            Assert.AreEqual(1, Program.Subtract("2", "1"));
+            Assert.AreEqual(-1, Program.Subtract("1", "2"));
+            Assert.AreEqual(2, Program.Subtract("7", "5"));
         }
 
         [Test]
@@ -56,9 +56,9 @@ namespace GithubActionsLab
 
         public void Multiply_Valid_Fritz()
         {
-            Assert.AreEqual(3, Program.Multiply("2", "1"));
-            Assert.AreEqual(5, Program.Multiply("1", "2"));
-            Assert.AreEqual(12, Program.Multiply("7", "5"));
+            Assert.AreEqual(2, Program.Multiply("2", "1"));
+            Assert.AreEqual(2, Program.Multiply("1", "2"));
+            Assert.AreEqual(35, Program.Multiply("7", "5"));
         }
 
         [Test]
@@ -79,10 +79,9 @@ namespace GithubActionsLab
 
         public void Divide_Valid_Fritz()
         {
-            //First Divide is meant to fail
-            Assert.AreEqual(3, Program.Divide("2", "a"));
-            Assert.AreEqual(5, Program.Divide("3", "2"));
-            Assert.AreEqual(12, Program.Divide("15", "5"));
+            Assert.AreEqual(2, Program.Divide("2", "1"));
+            Assert.AreEqual(1.5, Program.Divide("3", "2"));
+            Assert.AreEqual(3, Program.Divide("15", "5"));
         }
 
         [Test]
@@ -103,9 +102,9 @@ namespace GithubActionsLab
 
         public void Power_Valid_Fritz()
         {
-            Assert.AreEqual(3, Program.Power("2", "1"));
-            Assert.AreEqual(5, Program.Power("4", "2"));
-            Assert.AreEqual(12, Program.Power("7", "5"));
+            Assert.AreEqual(2, Program.Power("2", "1"));
+            Assert.AreEqual(16, Program.Power("4", "2"));
+            Assert.AreEqual(27, Program.Power("3", "3"));
         }
 
         [Test]
